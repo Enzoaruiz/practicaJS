@@ -5,17 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tarea JS</title>
     <script defer src="index.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header></header>
     <main>
+        <section class="header-main">
+            <h1 id="title"></h1>
+        </section>
+        <section class="container-form">
         <form id="form">
+            <label for="checkP"> Critica Positiva
+                <input type="checkbox" id="checkP" name="checkP">
+            </label>
+            <label for="checkN"> Critica Negativa
+                <input type="checkbox" id="checkN" name="checkN">
+            </label>
             <label for="critica">Agregar critica
                 <input type="text" name="critica" id="critica" class="input">
             </label>
-            <button type="submit" id="btnOk">👍</button>
-            <button type="submit" id="btnCancel">👎</button>
+            <button type="submit" id="btn">Enviar</button>
         </form>
+        </section>
+        <section class="container-list-positivas">
+            <ul id="list-ok">Criticas Positivas: </ul>
+            <ul id="listCancel"></ul>
+        </section>
     </main>
     <footer></footer>
 </body>
